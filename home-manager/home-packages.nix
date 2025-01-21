@@ -22,6 +22,7 @@
     fd
     fzf
     ghostty
+    git
     kitty
     neovim
     ripgrep
