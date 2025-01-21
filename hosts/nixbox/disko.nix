@@ -29,7 +29,7 @@
                   # disable to use interactive password entry
                   # keyFile = "/tmp/secret.key";
                 };
-                additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
+                # additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
                 content = {
                   type = "btrfs";
                   extraArgs = [ "-f" ];
