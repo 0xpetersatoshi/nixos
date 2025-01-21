@@ -15,9 +15,11 @@
     yubioath-flutter
 
     # CLI utils
+    bat
     brightnessctl
     btop
     cliphist
+    delta
     eza
     fd
     fzf
