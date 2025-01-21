@@ -61,3 +61,10 @@ named `myhost`, you would run:
 ```{bash}
 nixos-install --flake /root/home/nixos#myhost
 ```
+
+> **Note**: You will be prompted to set up a root password once the installation has completed. If you have defined a
+> user account in your `configuration.nix` file, you'll need to set a password before rebooting by running:
+
+```{bash}
+nixos-enter --root /mnt -c 'passwd peter'
+```
