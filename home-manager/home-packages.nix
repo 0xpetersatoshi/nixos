@@ -23,12 +23,20 @@
     eza
     fd
     fzf
+    gcc
     ghostty
     git
+    gnumake
     kitty
+    lazygit
+    libcxxStdenv
+    neofetch
     neovim
+    nerdfonts
     ripgrep
     starship
+    stow
+    tmux
     unzip
     wget
     wl-clipboard
