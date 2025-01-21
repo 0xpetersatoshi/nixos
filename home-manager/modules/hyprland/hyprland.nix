@@ -19,10 +19,10 @@
       "$terminal" = "ghostty";
       "$fileManager" = "dolphin";
       "$menu" = "wofi";
-      "$browser = brave";
-      "$passwordManager = 1password";
-      "$editor = nvim";
-      "$music = spotify";
+      "$browser" = "brave";
+      "$passwordManager" = "1password";
+      "$editor" = "nvim";
+      "$music" = "spotify";
 
       exec-once = [
         "uwsm app -- waybar"
