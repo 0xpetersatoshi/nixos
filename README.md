@@ -55,11 +55,11 @@ cp /mnt/etc/nixos/hardware-configuration.nix ./hosts/${HOST}/hardware-configurat
 nixos-install --flake /full/path/to/flake-root#${HOST}
 ```
 
-For example, if you cloned this repo to `/root/home/` in the NixOS installer and you want to install nix on a host
-named `myhost`, you would run:
+For example, if you cloned this repo to `/root` in the NixOS installer and you want to install nix on a host
+named `nixbox`, you would run:
 
 ```{bash}
-nixos-install --flake /root/home/nixos#myhost
+nixos-install --flake /root/nixos#nixbox
 ```
 
 > **Note**: You will be prompted to set up a root password once the installation has completed. If you have defined a
@@ -67,4 +67,13 @@ nixos-install --flake /root/home/nixos#myhost
 
 ```{bash}
 nixos-enter --root /mnt -c 'passwd peter'
+```
+
+### Updating NixOS
+
+After installing NixOS, clone this repo to `/etc/nixos`. Whenever you make changes to the configuration, to apply them
+you can run:
+
+```{bash}
+sudo nixos-rebuild switch --flake /etc/nixos#nixbox
 ```
