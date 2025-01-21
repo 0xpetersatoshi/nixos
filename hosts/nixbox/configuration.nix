@@ -28,11 +28,11 @@
     desktopManager.plasma5.enable = true;
     videoDrivers = ["nvidia"];
   };
+
   qt = {
     enable = true;
     platformTheme = "qt5ct";
     style = "kvantum";
-    wayland.enable = true;
   };
 
   # NVIDIA configuration
