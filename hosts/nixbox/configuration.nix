@@ -16,12 +16,30 @@
 
   system.stateVersion = stateVersion;
 
+  services.xserver = {
+    enable = true;
+    displayManager = {
+      defaultSession = "hyprland";
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+      };
+    };
+    desktopManager.plasma5.enable = true;
+    videoDrivers = ["nvidia"];
+  };
+  qt = {
+    enable = true;
+    platformTheme = "qt5ct";
+    style = "kvantum";
+    wayland.enable = true;
+  };
+
   # NVIDIA configuration
   hardware.graphics = {
     enable = true;
+    driSupport = true;
   };
-
-  services.xserver.videoDrivers = ["nvidia"];
 
   hardware.nvidia = {
     # Modesetting is required.
