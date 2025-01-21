@@ -32,6 +32,16 @@
         disko.nixosModules.disko
         ./hosts/${hostname}/configuration.nix
         ./hosts/${hostname}/disko.nix
+        # Add home-manager as a NixOS module
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.${user} = import ./home-manager/home.nix;
+          home-manager.extraSpecialArgs = {
+            inherit inputs homeStateVersion user;
+          };
+        }
       ];
     };
 
@@ -42,16 +52,5 @@
           inherit (host) hostname stateVersion;
         };
       }) {} hosts;
-
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
-      };
-
-      modules = [
-        ./home-manager/home.nix
-      ];
-    };
   };
 }
