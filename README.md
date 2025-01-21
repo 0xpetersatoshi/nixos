@@ -46,7 +46,7 @@ nixos-generate-config --no-filesystems --root /mnt
 And then copy that generated file to your target host path:
 
 ```{bash}
-cp /etc/nixos/hardware-configuration.nix ./hosts/${HOST}/hardware-configuration.nix
+cp /mnt/etc/nixos/hardware-configuration.nix ./hosts/${HOST}/hardware-configuration.nix
 ```
 
 ### Install NixOS
