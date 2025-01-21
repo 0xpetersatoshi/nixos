@@ -11,10 +11,10 @@
     };
 
     stylix.url = "github:danth/stylix";
-
+    disko.url = "github:nix-community/disko";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, disko, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "peter";
@@ -29,7 +29,9 @@
       };
 
       modules = [
+        disko.nixosModules.disko
         ./hosts/${hostname}/configuration.nix
+        ./hosts/${hostname}/disko.nix
       ];
     };
 
