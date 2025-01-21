@@ -3,10 +3,9 @@
     bind = [
       "CTRL,           Q, killactive,"
       "CTRL,           DELETE, exit,"
-      "CTRL,           L, exec, loginctl lock-session"
-      "$mainMod,       G, togglefloating,"
-      "$mainMod,       P, pin,"
-      "$mainMod,       Z, togglesplit,"
+      "CTRL SHIFT,     L, exec, loginctl lock-session"
+      "CTRL SHIFT,     F, togglefloating,"
+      "CTRL SHIFT,     Z, togglesplit,"
       "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
       "$mainMod,       O, exec, hyprpicker -an"
@@ -33,15 +32,15 @@
 
       # Moving windows vim style
       "$mainMod SHIFT, h,  swapwindow, l"
-      "$mainMod SHIFT, j,  swapwindow, r"
+      "$mainMod SHIFT, l,  swapwindow, r"
       "$mainMod SHIFT, k,  swapwindow, u"
-      "$mainMod SHIFT, l,  swapwindow, d"
+      "$mainMod SHIFT, j,  swapwindow, d"
 
       # Resizing windows vim style                   X  Y
       "$mainMod ALT, h, resizeactive, -20 0"
-      "$mainMod ALT, j, resizeactive,  20 0"
+      "$mainMod ALT, l, resizeactive,  20 0"
       "$mainMod ALT, k, resizeactive,  0 -20"
-      "$mainMod ALT, l, resizeactive,  0  20"
+      "$mainMod ALT, j, resizeactive,  0  20"
 
       # Switching workspaces
       "$altMod, 1, workspace, 1"
@@ -62,11 +61,11 @@
       "$altMod SHIFT, 3, movetoworkspacesilent, 3"
       "$altMod SHIFT, 4, movetoworkspacesilent, 4"
       "$altMod SHIFT, 5, movetoworkspacesilent, 5"
-      "$altMod SHIFT, 6, movetoworkspacesilent, 6"
-      "$altMod SHIFT, 7, movetoworkspacesilent, 7"
-      "$altMod SHIFT, 8, movetoworkspacesilent, 8"
-      "$altMod SHIFT, 9, movetoworkspacesilent, 9"
-      "$altMod SHIFT, 0, movetoworkspacesilent, 10"
+      "$altMod SHIFT, C, movetoworkspacesilent, 6"
+      "$altMod SHIFT, E, movetoworkspacesilent, 7"
+      "$altMod SHIFT, T, movetoworkspacesilent, 8"
+      "$altMod SHIFT, M, movetoworkspacesilent, 9"
+      "$altMod SHIFT, B, movetoworkspacesilent, 10"
 
       # Scratchpad
       "$mainMod,       S, togglespecialworkspace,  magic"

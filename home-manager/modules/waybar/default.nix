@@ -24,20 +24,14 @@
             "5" = "5";
             "6" = "C";
             "7" = "E";
-            "8" = "M";
-            "9" = "T";
+            "8" = "T";
+            "9" = "M";
             "10" = "B";
           };
 
           persistent-workspaces = {
             "*" = 10;
           };
-        };
-
-        "hyprland/language" = {
-          format-en = "🇺🇸";
-          min-length = 5;
-          tooltip = false;
         };
 
         "pulseaudio" = {
