@@ -45,6 +45,7 @@
     # WM stuff
     hyprpolkitagent
     libsForQt5.dolphin
+    libsForQt5.dolphin-plugins
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
