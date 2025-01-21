@@ -19,7 +19,7 @@
   services.xserver = {
     enable = true;
     displayManager = {
-      defaultSession = "hyprland";
+      defaultSession = "hyprland-uwsm";
       sddm = {
         enable = true;
         wayland.enable = true;
