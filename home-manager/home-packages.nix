@@ -54,6 +54,8 @@
     hyprpolkitagent
     libsForQt5.dolphin
     libsForQt5.dolphin-plugins
+    libsForQt5.kwallet
+    libsForQt5.kwalletmanager
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
