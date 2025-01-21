@@ -38,7 +38,6 @@
   # NVIDIA configuration
   hardware.graphics = {
     enable = true;
-    driSupport = true;
   };
 
   hardware.nvidia = {
