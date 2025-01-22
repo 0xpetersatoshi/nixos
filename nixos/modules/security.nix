@@ -18,6 +18,4 @@
     pinentryPackage = pkgs.pinentry-qt;
   };
 
-  # Necessary for yubico authenticator
-  services.pcscd.enable = true;
-}
+ }
