@@ -5,23 +5,23 @@
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
-  color: #ebdbb2;
+  color: #cdd6f4; /* text */
 }
 
 window#waybar {
-  background: #1d2021;
+  background: #1e1e2e; /* base */
 }
 
 /* Workspace Buttons */
 #workspaces button label{
-  color: #ebdbb2;
+  color: #cdd6f4; /* text */
   padding: 0 10px;
 }
 #workspaces button.active label {
-  color: #1d2021;
+  color: #1e1e2e; /* base */
 }
 #workspaces button.active {
-  background: #d65d0e;
+  background: #f5c2e7; /* pink */
 }
 
 #clock, #battery, #pulseaudio, #tray, #language, #weather {
@@ -31,42 +31,42 @@ window#waybar {
 
 #language {
   margin: 0;
-  color: #d79921;
-  border-bottom: 5px solid #d79921;
+  color: #f9e2af; /* yellow */
+  border-bottom: 5px solid #f9e2af;
 }
 
 #custom-weather {
   margin: 0;
-  color: #98971a;
-  border-bottom: 5px solid #98971a
+  color: #a6e3a1; /* green */
+  border-bottom: 5px solid #a6e3a1;
 }
 
 #pulseaudio {
   margin: 0;
-  color: #689d6a;
-  border-bottom: 5px solid #689d6a;
+  color: #94e2d5; /* teal */
+  border-bottom: 5px solid #94e2d5;
 }
 
 #pulseaudio.muted {
   padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 5px solid #cc241d;
+  color: #f38ba8; /* red */
+  border-bottom: 5px solid #f38ba8;
 }
 
 #battery {
   margin: 0;
-  color: #458588;
-  border-bottom: 5px solid #458588;
+  color: #89b4fa; /* blue */
+  border-bottom: 5px solid #89b4fa;
 }
 
 #clock {
   margin: 0;
-  color: #b16286;
-  border-bottom: 5px solid #b16286;
+  color: #cba6f7; /* mauve */
+  border-bottom: 5px solid #cba6f7;
 }
 
 #tray {
   margin: 0;
-  color: #d65d0e;
-  border-bottom: 5px solid #d65d0e;
+  color: #fab387; /* peach */
+  border-bottom: 5px solid #fab387;
 }
