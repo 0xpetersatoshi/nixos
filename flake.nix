@@ -10,7 +10,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix.url = "github:bluskript/stylix/myfork";
+    stylix.url = "github:danth/stylix";
     disko.url = "github:nix-community/disko";
   };
 
