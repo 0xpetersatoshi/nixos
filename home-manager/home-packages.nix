@@ -47,8 +47,11 @@
     # Programming
     go
     python314
-    rustup
     uv
+
+    # Rust-specific
+    cargo
+    rustc
 
     # WM stuff
     hyprpolkitagent
