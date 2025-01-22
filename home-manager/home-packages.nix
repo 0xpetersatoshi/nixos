@@ -33,6 +33,7 @@
     neofetch
     neovim
     nerdfonts
+    nil
     ripgrep
     starship
     stow
