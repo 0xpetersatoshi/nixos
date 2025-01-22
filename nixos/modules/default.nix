@@ -9,6 +9,7 @@
     ./kernel.nix
     ./network.nix
     ./nix.nix
+    ./security.nix
     ./timezone.nix
     ./user.nix
     ./zram.nix

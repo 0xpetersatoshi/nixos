@@ -16,9 +16,6 @@
 
   system.stateVersion = stateVersion;
 
-  # Necessary for yubico authenticator
-  services.pcscd.enable = true;
-
   services.xserver = {
     enable = true;
     displayManager = {
