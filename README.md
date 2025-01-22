@@ -69,7 +69,18 @@ nixos-install --flake /root/nixos#nixbox
 nixos-enter --root /mnt -c 'passwd peter'
 ```
 
-### Updating NixOS
+## Post-Install
+
+After installation, there are some manual things to run. In the future these will be declared in the nixos config.
+
+### Generate GPG Key for KWallet
+
+```{bash}
+gpg --full-generate-key
+```
+Select the kind of key, enter name and email, and set a passphrase.
+
+## Updating NixOS
 
 After installing NixOS, clone this repo to `/etc/nixos`. Whenever you make changes to the configuration, to apply them
 you can run:
