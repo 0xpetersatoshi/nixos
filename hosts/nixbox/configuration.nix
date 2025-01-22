@@ -19,15 +19,17 @@
   # Necessary for yubico authenticator
   services.pcscd.enable = true;
 
+  services.displayManager = {
+    sddm = {
+      enable = true;
+      wayland.enable = true;
+    };
+
+    defaultSession = "hyprland-uwsm";
+  };
+
   services.xserver = {
     enable = true;
-    displayManager = {
-      defaultSession = "hyprland-uwsm";
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-    };
     desktopManager.plasma5.enable = true;
     videoDrivers = ["nvidia"];
   };
